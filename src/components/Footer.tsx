@@ -22,7 +22,7 @@ export default function Footer() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2, ease: [0.76, 0, 0.24, 1] }}
-                className="font-display font-bold text-[12vw] text-white leading-[0.8] tracking-tighter group-hover:text-transparent transition-all duration-500"
+                className="font-display font-bold text-[12vw] text-white leading-[0.8] tracking-tight group-hover:text-transparent transition-all duration-500"
                 style={{ WebkitTextStroke: '2px white' }}
               >
                 LET'S TALK
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-4">
-            <span>© {new Date().getFullYear()} 3POINT3 STUDIOS</span>
+            <span>© {new Date().getFullYear()} <span className="inline-block -scale-x-100">3</span>POINT3 STUDIOS</span>
           </div>
         </div>
       </div>

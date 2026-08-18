@@ -11,7 +11,7 @@ export default function Nav() {
       className="fixed top-0 left-0 w-full py-6 px-6 md:px-12 z-50 mix-blend-difference text-white flex justify-between items-center pointer-events-none"
     >
       <Link to="/" className="font-display font-bold text-lg md:text-xl tracking-wide pointer-events-auto whitespace-nowrap">
-        3POINT3 STUDIOS
+        <span className="inline-block -scale-x-100">3</span>POINT3 STUDIOS
       </Link>
       <div className="hidden md:flex gap-8 text-xs font-sans font-semibold tracking-widest uppercase pointer-events-auto">
         <Link to="/" className="hover:opacity-60 transition-opacity">Home</Link>

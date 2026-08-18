@@ -43,7 +43,7 @@ export default function WorkShowcase() {
       </Link>
 
       <div className="flex flex-col mb-16 border-b border-white/20 pb-8">
-        <h1 className="font-display font-bold text-6xl md:text-8xl text-white leading-none tracking-tighter">ALL<br/>WORK</h1>
+        <h1 className="font-display font-bold text-6xl md:text-8xl text-white leading-none tracking-tight">ALL<br/>WORK</h1>
       </div>
       
       <div className="flex flex-col w-full gap-12 md:gap-24">

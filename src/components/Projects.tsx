@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export const PROJECTS = [
   {
     id: 1,
-    title: 'WHATSAPP AI SUMMIT',
+    title: 'WHATSAPP SUMMIT',
     youtubeId: 'KWtdolTO02M',
     posterUrl: 'https://img.youtube.com/vi/KWtdolTO02M/maxresdefault.jpg',
     isVertical: false
@@ -99,7 +99,7 @@ export function ProjectCard({ project, className = "" }: { project: typeof PROJE
       </div>
 
       <div className="mt-4 md:mt-6">
-        <h3 className={`font-display font-bold ${project.isVertical ? 'text-2xl md:text-4xl' : 'text-3xl md:text-5xl'} text-white tracking-tighter`}>
+        <h3 className={`font-display font-bold ${project.isVertical ? 'text-2xl md:text-4xl' : 'text-3xl md:text-5xl'} text-white tracking-tight`}>
           {project.title}
         </h3>
       </div>
@@ -115,8 +115,13 @@ export default function Projects() {
 
   return (
     <section id="work" className="py-12 md:py-16 px-6 md:px-12 w-full max-w-[1800px] mx-auto">
-      <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-8 border-b border-white/20 pb-8">
-        <h2 className="font-display font-bold text-6xl md:text-8xl text-white leading-none tracking-tighter">WORK<br/>SHOWCASE</h2>
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16 border-b border-white/20 pb-8">
+        <h2 className="font-display font-bold text-5xl md:text-6xl text-white leading-none tracking-tight">WORK<br/>SHOWCASE</h2>
+        <div className="font-sans text-gray-400 text-sm md:text-base lg:text-lg max-w-2xl md:text-left flex flex-col gap-2">
+          <p className="font-bold text-white text-base md:text-lg">Every brief has a story waiting to be told.</p>
+          <p>We start by understanding the brief, then strip it back to what really matters. From there, we build the idea, shape the narrative and craft every frame to make the story feel real.</p>
+          <p>This is a look at the work that came out of that process.</p>
+        </div>
       </div>
       
       <div className="flex flex-col w-full gap-12 md:gap-24">

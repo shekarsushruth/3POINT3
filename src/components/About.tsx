@@ -30,57 +30,156 @@ export default function About() {
               whileInView={{ y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
-              className="text-white text-3xl md:text-5xl lg:text-[3.5rem] font-display font-bold uppercase tracking-tighter leading-[1.05]"
+              className="text-white text-3xl md:text-5xl lg:text-[4rem] font-display font-bold uppercase tracking-tight leading-[1.05]"
             >
-              We craft visually striking narratives that disrupt the ordinary.
+              CHASING THE STANDARD YOU WANT TO SET.
             </motion.h2>
           </div>
-          <motion.p 
+          <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.2, ease: [0.76, 0, 0.24, 1] }}
-            className="text-gray-400 text-lg md:text-xl font-sans max-w-xl leading-relaxed mb-12"
+            className="text-gray-400 text-lg md:text-xl font-sans max-w-2xl leading-relaxed mb-12 flex flex-col gap-4"
           >
-            Blending high-end cinematography with bold editorial rhythm, we create work that demands attention across commercial and documentary landscapes.
-          </motion.p>
+            <p>We take ideas from the page to the screen through a complete filmmaking process built on craft, storytelling and visual precision. Every project is an opportunity to push further, create better and raise the bar.</p>
+            <p className="font-bold text-white uppercase tracking-widest text-sm md:text-base mt-2">ARE YOU READY TO SET THE STANDARD?</p>
+          </motion.div>
           
           <motion.div 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 border-t border-white/20 pt-8 text-gray-400 font-sans"
+            className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 border-t border-white/20 pt-8 text-gray-400 font-sans"
           >
             <div>
-              <h4 className="text-white font-sans text-xs font-bold uppercase tracking-widest mb-4">01. Directing</h4>
-              <ul className="space-y-2 text-sm">
-                <li>Commercials</li>
-                <li>Music Videos</li>
-                <li>Short Films</li>
+              <h4 className="text-white font-sans text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-3">1. Story & Script</h4>
+              <ul className="space-y-1.5 text-xs sm:text-sm">
+                <li>Idea Development</li>
+                <li>Scriptwriting</li>
+                <li>Narrative Development</li>
+                <li>Treatment Writing</li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-sans text-xs font-bold uppercase tracking-widest mb-4">02. Cinematography</h4>
-              <ul className="space-y-2 text-sm">
-                <li>Lighting Design</li>
+              <h4 className="text-white font-sans text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-3">02. Conceptualization</h4>
+              <ul className="space-y-1.5 text-xs sm:text-sm">
+                <li>Creative Concept</li>
+                <li>Visual Development</li>
+                <li>Storyboarding</li>
+                <li>Shot Planning</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-white font-sans text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-3">03. Pre-Production</h4>
+              <ul className="space-y-1.5 text-xs sm:text-sm">
+                <li>Casting</li>
+                <li>Location Scouting</li>
+                <li>Production Design</li>
+                <li>Art Direction</li>
+                <li>Production Planning</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-white font-sans text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-3">04. Production</h4>
+              <ul className="space-y-1.5 text-xs sm:text-sm">
+                <li>Direction</li>
+                <li>Cinematography</li>
                 <li>Camera Operating</li>
-                <li>Drone Piloting</li>
+                <li>Lighting Design</li>
+                <li>Drone Filming</li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-sans text-xs font-bold uppercase tracking-widest mb-4">03. Post-Production</h4>
-              <ul className="space-y-2 text-sm">
+              <h4 className="text-white font-sans text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-3">05. Post-Production</h4>
+              <ul className="space-y-1.5 text-xs sm:text-sm">
                 <li>Offline Editing</li>
                 <li>Color Grading</li>
                 <li>Sound Design</li>
-                <li>VFX/CGI</li>
+                <li>Motion Graphics</li>
+                <li>VFX / CGI</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-white font-sans text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-3">06. Final Film</h4>
+              <ul className="space-y-1.5 text-xs sm:text-sm">
+                <li>Finishing</li>
+                <li>Mastering</li>
+                <li>Format Adaptation</li>
+                <li>Delivery</li>
               </ul>
             </div>
           </motion.div>
         </div>
         
       </div>
+
+      {/* Categories Full-Width Grid */}
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.4 }}
+        className="mt-16 md:mt-32 w-full pt-12 md:pt-16 border-t border-white/20 flex flex-col"
+      >
+        <h3 className="text-white font-display font-bold text-xl md:text-2xl uppercase tracking-tight mb-8 md:mb-12">
+          WE MAKE FILMS FOR EVERY KIND OF STORY.
+        </h3>
+        
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 text-gray-400 font-sans">
+          <div>
+            <h4 className="text-white font-sans text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Commercials</h4>
+            <ul className="space-y-2 text-xs md:text-sm">
+              <li>Brand Films</li>
+              <li>TV Commercials</li>
+              <li>Digital Films</li>
+              <li>Product Films</li>
+              <li>Campaign Films</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-white font-sans text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Story-Driven</h4>
+            <ul className="space-y-2 text-xs md:text-sm">
+              <li>Short Films</li>
+              <li>Documentaries</li>
+              <li>Music Videos</li>
+              <li>Narrative Films</li>
+              <li>Branded Content</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-white font-sans text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">People & Culture</h4>
+            <ul className="space-y-2 text-xs md:text-sm">
+              <li>Corporate Films</li>
+              <li>Founder Stories</li>
+              <li>Interviews</li>
+              <li>Testimonials</li>
+              <li>Employee Stories</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-white font-sans text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Experience & Event</h4>
+            <ul className="space-y-2 text-xs md:text-sm">
+              <li>Event Films</li>
+              <li>Aftermovies</li>
+              <li>Experiential Films</li>
+              <li>Social Films</li>
+              <li>Behind-the-Scenes</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-white font-sans text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4">Digital & Social</h4>
+            <ul className="space-y-2 text-xs md:text-sm">
+              <li>Social Films</li>
+              <li>Reels</li>
+              <li>Short-Form Content</li>
+              <li>Vertical Films</li>
+              <li>Platform Adaptations</li>
+            </ul>
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 }

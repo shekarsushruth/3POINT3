@@ -15,9 +15,9 @@ export default function About() {
             className="w-full aspect-square bg-[#0a0a0a] relative rounded-sm overflow-hidden"
           >
             <img 
-              src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?auto=format&fit=crop&q=80&w=1200" 
+              src="/dp.png" 
               alt="Studio Setup" 
-              className="absolute inset-0 w-full h-full object-cover grayscale opacity-80" 
+              className="absolute inset-0 w-full h-full object-cover object-[65%_center] grayscale opacity-80" 
             />
           </motion.div>
         </div>

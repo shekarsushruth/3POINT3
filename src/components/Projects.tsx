@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 
 export const PROJECTS = [
   {
+    id: 10,
+    title: 'MILTE RAHENGE - MUSIC VIDEO',
+    youtubeId: 't3Mmkzx4iKs',
+    posterUrl: 'https://img.youtube.com/vi/t3Mmkzx4iKs/maxresdefault.jpg',
+    isVertical: false
+  },
+  {
     id: 1,
     title: 'WHATSAPP SUMMIT',
     youtubeId: 'KWtdolTO02M',
@@ -55,7 +62,7 @@ export const PROJECTS = [
   }
 ];
 
-export function ProjectCard({ project, className = "" }: { project: typeof PROJECTS[0]; className?: string }) {
+export function ProjectCard({ project, className = "" }: { project: typeof PROJECTS[0]; className?: string; key?: string | number }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const aspectClass = project.isVertical ? 'aspect-[9/16]' : 'aspect-video';
 
